@@ -19,4 +19,4 @@ This repository contains a **simple car trading system** developed while learnin
 - **RESTful API**  
 - **Central Bank API**  
 
-Feel free to explore and contribute! 🚀  
+**Additional Note:** Only single operations (e.g., save) are implemented in the services, and the entire project is not fully developed. This is a trial project.
