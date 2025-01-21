@@ -1,19 +1,28 @@
 package com.goktug.cargallerist.exception;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+
+@NoArgsConstructor
 @Getter
 @Setter
-@AllArgsConstructor
-@NoArgsConstructor
 public class ErrorMessage {
 
     private String ofStatic;
 
     private MessageType messageType;
+
+    public ErrorMessage(String message, MessageType type) {
+        this.ofStatic = message;
+        this.messageType = type;
+    }
+
+    public ErrorMessage(String message, Long id) {
+
+    }
+
 
     public String prepareErrorMessage(){
         StringBuilder sb = new StringBuilder();

@@ -24,4 +24,20 @@ public class GalleristCar extends BaseEntity{
 
     @ManyToOne
     private Car car;
+
+    public Gallerist getGallerist() {
+        return gallerist;
+    }
+
+    public void setGallerist(Gallerist gallerist) {
+        this.gallerist = gallerist;
+    }
+
+    public Car getCar() {
+        return car;
+    }
+
+    public void setCar(Car car) {
+        this.car = car;
+    }
 }

@@ -24,4 +24,28 @@ public class SaledCar extends BaseEntity{
 
     @ManyToOne
     private Customer customer;
+
+    public Customer getCustomer() {
+        return customer;
+    }
+
+    public void setCustomer(Customer customer) {
+        this.customer = customer;
+    }
+
+    public Car getCar() {
+        return car;
+    }
+
+    public void setCar(Car car) {
+        this.car = car;
+    }
+
+    public Gallerist getGallerist() {
+        return gallerist;
+    }
+
+    public void setGallerist(Gallerist gallerist) {
+        this.gallerist = gallerist;
+    }
 }
